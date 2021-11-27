@@ -281,43 +281,26 @@
             </div>
             <html>
 
-    <head>
-      <iframe src="menu-bar.html" height="45" width="1300" align="right" scrolling="no" frameborder="0"></iframe>
-                 <br />
-                 <br />
-                 <br />
-                         <!-- Code Tester Starts -->
-     <div class="center-page">
-     <!-- Code Tester Scripts Starts -->
-                 <script src="http://jswebsite.co.nf/code-tester-javascript.min.js"></script>
-     <!-- Code Tester Scripts End -->
-                 <p>If you press Ctrl + Enter, the code will open in a new tab. If you press the "Test HTML Code" button, the code will open in a new window if you are using a Chrome browser.
-                 <br />Please resize the code box if needed.</p>
-     <p style="font-size:23px; color: white;">Code Tester for HTML:</p>
- <form name="tester">
- <textarea rows="20" cols="120" name="code-box" wrap="physical" id="codebox" spellcheck="false"></textarea>
-         <br />
-         <input type="button" value="Test HTML Code" onclick="preview()">
-         <input value="Clear HTML Code" type="reset">
-         <button onclick="TogetherJS(this); return false;">Collaborate</button>
-     </form>
-                 </div>
-                 <iframe src="menu-bar.html" height="45" width="1300" align="right" scrolling="no" frameborder="0"></iframe>
-               <br />
-               <br />
-               <br />
-                       <!-- Code Tester Starts -->
+            <form id="form" onsubmit="return false;">
+          <input   style=position:absolute;top:80%;left:5%;width:40%; type="text" id="userInput">
+          <input   style=position:absolute;top:50%;left:5%;width:40%; type="submit"    onclick="name()">
+          </form>
+          <function
+          function name()
+{
+var input = document.getElementById("userInput");
+alert(input);
+}
+<form id="form" onsubmit="return false;">
+    <input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
+    <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
+</form>
 <Function
-                       function save(filename, html) {
-                      var el = document.createElement('a');
-                      el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
-                      el.setAttribute('download', filename);
-                      el.style.display = 'none';
-                      document.body.appendChild(el);
-                      el.click();
-                      document.body.removeChild(el);
-                    }
-                  </Function>
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}
+/Function>
 
 
 
