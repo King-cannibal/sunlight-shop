@@ -283,19 +283,24 @@
 
     <head>
     </head>
-    <form method="post" action="IConductores.php" >
-    <p></p>
-        <label>Foto</label>
-        <input type="file" id="Foto" name="Foto">
-    <input type="submit" id="Enviar" name="Enviar">
+    <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Upload Files</title>
+  </head>
+
+  <body>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="files[]" multiple />
+      <input type="submit" value="Upload File" name="submit" />
     </form>
 
-    </html>
-    <script>
-    UPLOADCARE_PUBLIC_KEY = 'demopublickey';
-  </script>
-  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
-  <input type="hidden" role="uploadcare-uploader" name="my_file_input" />
+    <script src="upload.js"></script>
+  </body>
+</html>
 
 
 
