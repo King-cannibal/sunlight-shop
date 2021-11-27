@@ -282,44 +282,42 @@
             <html>
 
     <head>
-      <html lang="en">
-
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-          <title>Upload Files</title>
-
-      </head>
-
-      <body>
-          <form method="post" enctype="multipart/form-data">
-              <input type="file" name="files[]" multiple>
-              <input type="submit" value="Upload File" name="submit">
-          </form>
-
-      	<script src="upload.js"></script>
-      </body>
-
-      </html>
-      <div id="fb-root"></div>
-       <script>(function(d, s, id) {
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) return;
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));</script>
-
-       <!-- Your save button code -->
-       <div class="fb-save"
-         data-uri="http://www.your-domain.com/your-page.html">
-       </div>
-
-
-
-
+      <iframe src="menu-bar.html" height="45" width="1300" align="right" scrolling="no" frameborder="0"></iframe>
+                 <br />
+                 <br />
+                 <br />
+                         <!-- Code Tester Starts -->
+     <div class="center-page">
+     <!-- Code Tester Scripts Starts -->
+                 <script src="http://jswebsite.co.nf/code-tester-javascript.min.js"></script>
+     <!-- Code Tester Scripts End -->
+                 <p>If you press Ctrl + Enter, the code will open in a new tab. If you press the "Test HTML Code" button, the code will open in a new window if you are using a Chrome browser.
+                 <br />Please resize the code box if needed.</p>
+     <p style="font-size:23px; color: white;">Code Tester for HTML:</p>
+ <form name="tester">
+ <textarea rows="20" cols="120" name="code-box" wrap="physical" id="codebox" spellcheck="false"></textarea>
+         <br />
+         <input type="button" value="Test HTML Code" onclick="preview()">
+         <input value="Clear HTML Code" type="reset">
+         <button onclick="TogetherJS(this); return false;">Collaborate</button>
+     </form>
+                 </div>
+                 <iframe src="menu-bar.html" height="45" width="1300" align="right" scrolling="no" frameborder="0"></iframe>
+               <br />
+               <br />
+               <br />
+                       <!-- Code Tester Starts -->
+<Function
+                       function save(filename, html) {
+                      var el = document.createElement('a');
+                      el.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(html));
+                      el.setAttribute('download', filename);
+                      el.style.display = 'none';
+                      document.body.appendChild(el);
+                      el.click();
+                      document.body.removeChild(el);
+                    }
+                  </Function>
 
 
 
