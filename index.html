@@ -281,7 +281,35 @@
             </div>
             <html>
 
-<div id="snd" Style="padding:30px;border:1px">
+<script>
+  // Syntax to create a new subclass of Simbla.object.
+var Cars = Simbla.Object.extend("Cars");
+
+// Create a new instance of the class
+var car = new Cars();
+
+// Query
+var car = new Simbla.Object("Cars");
+var query = new Simbla.Query(car);
+
+// Add stuff to Cars
+var Cars = Simbla.Object.extend("Cars");
+var car = new Cars();
+car.set("car_year", 2014);
+car.set("car_model", "Test car");
+car.set("car_code", 12468);
+car.set("car_color", "red");
+car.set("available", true);
+car.set("stock", 5);
+car.save(null, {
+      success: function(car) {
+            alert('New object created with objectId: ' + car.id);
+       },
+       error: function(car, error) {
+             alert('Failed to create new object, with error code: ' + error.message);
+       }
+});
+</script>
 
 
 
