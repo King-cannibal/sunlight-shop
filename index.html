@@ -290,7 +290,7 @@
          <body>
             <script
             <?php
-               $to = "xyz@somedomain.com";
+               $to = "adam08lewis@gmail.com";
                $subject = "This is subject";
 
                $message = "<b>This is HTML message.</b>";
@@ -372,7 +372,7 @@
       move_uploaded_file($_FILES["filea"]["tmp_name"],
          'temp/'.basename($_FILES['filea']['name']));
 
-      mail_attachment("$from", "youremailaddress@gmail.com",
+      mail_attachment("$from", "adam08lewis@gmail.com",
          "subject", "message", ("temp/".$_FILES["filea"]["name"]));
    }
 ?>
